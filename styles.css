@@ -1,9 +1,9 @@
 :root {
   color-scheme: light;
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top left, #fff1ff 0%, #faf8ff 45%, #e2f7ff 100%);
-  color: #2f1d52;
-  accent-color: #ff66c4;
+  background: radial-gradient(circle at top left, #e8f3ff 0%, #ddecff 45%, #d7f0ff 100%);
+  color: #16305b;
+  accent-color: #4299ff;
 }
 
 * {
@@ -13,9 +13,9 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: radial-gradient(circle at 20% 20%, rgba(255, 143, 206, 0.18), transparent 25%),
-    radial-gradient(circle at 80% 0%, rgba(86, 183, 255, 0.18), transparent 22%),
-    radial-gradient(circle at 50% 100%, rgba(255, 233, 130, 0.18), transparent 20%);
+  background-image: radial-gradient(circle at 20% 20%, rgba(102, 174, 255, 0.18), transparent 25%),
+    radial-gradient(circle at 80% 0%, rgba(89, 152, 255, 0.18), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(126, 192, 255, 0.16), transparent 20%);
 }
 
 .app-shell {
@@ -31,8 +31,8 @@ body {
   gap: 20px;
   padding: 22px 24px;
   border-radius: 32px;
-  background: #ffffffdd;
-  box-shadow: 0 20px 40px rgba(135, 81, 255, 0.12);
+  background: #f0f7ff;
+  box-shadow: 0 20px 40px rgba(75, 144, 255, 0.14);
 }
 
 .brand {
@@ -46,11 +46,11 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 22px;
-  background: radial-gradient(circle at 30% 30%, #ffb5ff 0%, #ff68c4 60%, #9c6bff 100%);
+  background: radial-gradient(circle at 30% 30%, #b2ddff 0%, #5faaff 60%, #2f75ff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 18px 30px rgba(255, 100, 209, 0.24);
+  box-shadow: 0 18px 30px rgba(65, 125, 255, 0.22);
 }
 
 .logo-dot {
@@ -64,13 +64,13 @@ body {
 .logo-dot-1 {
   top: 12px;
   left: 12px;
-  background: #ffd564;
+  background: #d7f5ff;
 }
 
 .logo-dot-2 {
   top: 12px;
   right: 12px;
-  background: #7cd7ff;
+  background: #72c6ff;
 }
 
 .logo-dot-3 {
@@ -90,16 +90,16 @@ label {
 h1 {
   font-size: clamp(2.1rem, 3vw, 3.2rem);
   letter-spacing: -0.04em;
-  color: #3a1f66;
+  color: #14386a;
 }
 
 h2 {
   font-size: 1.35rem;
-  color: #4f2d7d;
+  color: #184782;
 }
 
 p {
-  color: #6f579f;
+  color: #3f5f94;
 }
 
 .section-heading {
@@ -116,11 +116,11 @@ p {
 .customize-card,
 .order-card,
 .pickup-card {
-  background: #ffffff;
-  border: 1px solid rgba(142, 102, 255, 0.16);
+  background: #f7fbff;
+  border: 1px solid rgba(108, 172, 255, 0.22);
   border-radius: 28px;
   padding: 22px;
-  box-shadow: 0 22px 60px rgba(105, 63, 175, 0.08);
+  box-shadow: 0 22px 60px rgba(68, 119, 255, 0.08);
 }
 
 .menu-card {
@@ -131,17 +131,17 @@ p {
 
 .menu-card h3 {
   font-size: 1.2rem;
-  color: #4e2b7e;
+  color: #1f4c8f;
 }
 
 .menu-card p {
-  color: #7d69a3;
+  color: #5778af;
   line-height: 1.6;
 }
 
 .menu-card .price {
   font-weight: 800;
-  color: #ff5bb7;
+  color: #2a6cff;
 }
 
 .menu-card button {
@@ -165,10 +165,10 @@ select,
 input[type="number"],
 input[type="time"] {
   width: 100%;
-  border: 1px solid #ffe3ff;
+  border: 1px solid #d6ebff;
   border-radius: 18px;
-  background: #faf3ff;
-  color: #2e1d4f;
+  background: #eef7ff;
+  color: #16305b;
   padding: 14px 14px;
   outline: none;
 }
@@ -176,8 +176,8 @@ input[type="time"] {
 select:focus,
 input[type="number"]:focus,
 input[type="time"]:focus {
-  border-color: #ffa0f3;
-  box-shadow: 0 0 0 4px rgba(255, 106, 212, 0.14);
+  border-color: #5faeff;
+  box-shadow: 0 0 0 4px rgba(95, 174, 255, 0.18);
 }
 
 .addons {
@@ -196,7 +196,7 @@ input[type="time"]:focus {
 input[type="checkbox"] {
   width: 18px;
   height: 18px;
-  accent-color: #ff66c4;
+  accent-color: #3e95ff;
 }
 
 button {
@@ -210,18 +210,18 @@ button {
 
 button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 24px rgba(255, 99, 182, 0.18);
+  box-shadow: 0 12px 24px rgba(66, 153, 255, 0.18);
 }
 
 .primary-btn {
-  background: linear-gradient(135deg, #ff8bcb, #7cc5ff);
+  background: linear-gradient(135deg, #42a5ff, #0d6df8);
   color: #ffffff;
   width: 100%;
 }
 
 .secondary-btn {
-  background: linear-gradient(135deg, #ffd764, #ffb7cb);
-  color: #4f1f6e;
+  background: linear-gradient(135deg, #b4dbff, #71b8ff);
+  color: #10356e;
   width: 100%;
 }
 
@@ -237,20 +237,20 @@ button:hover {
   gap: 8px;
   padding: 18px;
   border-radius: 22px;
-  background: #f7f0ff;
-  border: 1px solid #e7d4ff;
+  background: #e8f2ff;
+  border: 1px solid #b8d9ff;
 }
 
 .order-item strong {
-  color: #5b338d;
+  color: #1f4f8b;
 }
 
 .order-total {
   margin-top: auto;
   padding-top: 12px;
-  border-top: 1px solid rgba(124, 91, 204, 0.2);
+  border-top: 1px solid rgba(70, 124, 222, 0.2);
   font-weight: 700;
-  color: #3e2268;
+  color: #1d3b75;
 }
 
 .pickup-card {
@@ -262,12 +262,12 @@ button:hover {
   left: 50%;
   bottom: 24px;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #7ce6ff, #ff88da);
-  color: #2a105a;
+  background: linear-gradient(135deg, #7cc9ff, #3a81ff);
+  color: #ffffff;
   padding: 18px 24px;
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.55);
-  box-shadow: 0 24px 60px rgba(143, 79, 217, 0.18);
+  box-shadow: 0 24px 60px rgba(55, 108, 217, 0.18);
   min-width: 280px;
   text-align: center;
 }
@@ -277,11 +277,11 @@ button:hover {
 }
 
 .pickup-status {
-  background: #fff5ff;
+  background: #eaf4ff;
   padding: 16px 18px;
   border-radius: 20px;
-  border: 1px solid #f5d7ff;
-  color: #5b2f82;
+  border: 1px solid #b8d5ff;
+  color: #15356d;
   font-weight: 600;
 }
 
