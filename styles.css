@@ -35,6 +35,51 @@ body {
   box-shadow: 0 20px 40px rgba(135, 81, 255, 0.12);
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-badge {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 22px;
+  background: radial-gradient(circle at 30% 30%, #ffb5ff 0%, #ff68c4 60%, #9c6bff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 18px 30px rgba(255, 100, 209, 0.24);
+}
+
+.logo-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(255, 255, 255, 0.24);
+}
+
+.logo-dot-1 {
+  top: 12px;
+  left: 12px;
+  background: #ffd564;
+}
+
+.logo-dot-2 {
+  top: 12px;
+  right: 12px;
+  background: #7cd7ff;
+}
+
+.logo-dot-3 {
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+}
+
 h1,
 h2,
 p,
