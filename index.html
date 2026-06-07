@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCoffee</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <h1>VibeCoffee</h1>
+        <p>Browse, customize, order, and pick up in store.</p>
+      </div>
+      <div class="pickup-status" id="pickup-status">Ready for pickup</div>
+    </header>
+
+    <main>
+      <section class="menu-section">
+        <div class="section-heading">
+          <h2>Menu</h2>
+          <p>Choose a drink to customize.</p>
+        </div>
+        <div class="menu-grid" id="menu-grid"></div>
+      </section>
+
+      <section class="customize-section">
+        <div class="section-heading">
+          <h2>Customize</h2>
+          <p>Build your drink before adding it to your order.</p>
+        </div>
+        <div class="customize-card">
+          <div class="field">
+            <label for="drink-select">Drink</label>
+            <select id="drink-select"></select>
+          </div>
+          <div class="field">
+            <label for="size-select">Size</label>
+            <select id="size-select"></select>
+          </div>
+          <div class="field">
+            <label for="milk-select">Milk</label>
+            <select id="milk-select"></select>
+          </div>
+          <div class="field addons">
+            <p>Add-ons</p>
+            <label><input type="checkbox" name="addon" value="Extra shot" /> Extra shot</label>
+            <label><input type="checkbox" name="addon" value="Vanilla syrup" /> Vanilla syrup</label>
+            <label><input type="checkbox" name="addon" value="Caramel syrup" /> Caramel syrup</label>
+            <label><input type="checkbox" name="addon" value="Whipped cream" /> Whipped cream</label>
+          </div>
+          <div class="field">
+            <label for="quantity-input">Quantity</label>
+            <input type="number" id="quantity-input" min="1" value="1" />
+          </div>
+          <button id="add-order-btn" class="primary-btn">Add to Order</button>
+        </div>
+      </section>
+
+      <section class="order-section">
+        <div class="section-heading">
+          <h2>Your Order</h2>
+          <p>Review your drinks and choose pickup details.</p>
+        </div>
+        <div class="order-card">
+          <div class="order-summary" id="order-summary">
+            <p class="empty-state">No items added yet.</p>
+          </div>
+          <div class="pickup-card">
+            <div class="field">
+              <label for="store-select">Pickup Location</label>
+              <select id="store-select">
+                <option value="Main Street">Main Street</option>
+                <option value="Oak Avenue">Oak Avenue</option>
+                <option value="River Park">River Park</option>
+                <option value="Market Square">Market Square</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="pickup-time">Pickup Time</label>
+              <input type="time" id="pickup-time" value="10:00" />
+            </div>
+            <button id="place-order-btn" class="secondary-btn">Place Order</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast hidden"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
